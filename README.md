@@ -20,7 +20,7 @@ https://rates-api.vercel.app/api/rate
 ### Example Request
 
 ```bash
-GET https://rates-api.vercel.app/api/rate?city=MSK&pair=BTC/USD
+GET https://rates-api.vercel.app/api/rate?city=MSK&pair=BTC/CASHUSD
 ```
 
 ### Example Success Response
@@ -29,7 +29,7 @@ GET https://rates-api.vercel.app/api/rate?city=MSK&pair=BTC/USD
 {
   "city": "MSK",
   "from": "BTC",
-  "to": "USD",
+  "to": "CASHUSD",
   "in": "50000",
   "out": "51000"
 }
@@ -64,16 +64,14 @@ Below is a list of supported currency pairs that can be used in the `pair` param
 
 | From Currency | To Currency                |
 |---------------|----------------------------|
-| BTC           | USD, CASHUSD, CASHRUB       |
-| LTC           | USD, CASHUSD, CASHRUB       |
-| ETH           | USD, CASHUSD, CASHRUB       |
-| SOL           | USD, CASHUSD, CASHRUB       |
-
+| BTC           | CASHUSD, CASHRUB       |
+| LTC           | CASHUSD, CASHRUB       |
+| ETH           | CASHUSD, CASHRUB       |
 
 ### Example Request for Moscow and BTC/USD
 
 ```bash
-GET https://rates-api.vercel.app/api/rate?city=MSK&pair=BTC/USD
+GET https://rates-api.vercel.app/api/rate?city=MSK&pair=BTC/CASHUSD
 ```
 
 ### Error handling
