@@ -69,11 +69,13 @@ Below is a list of supported currency pairs that can be used in the `pair` param
 | ETH           | USD, CASHUSD, CASHRUB       |
 | SOL           | USD, CASHUSD, CASHRUB       |
 
+
 ### Example Request for Moscow and BTC/USD
 
 ```bash
 GET https://your-project-name.vercel.app/api/rate?city=MSK&pair=BTC/USD
 ```
+
 ### Error handling
 The API returns an error if required parameters are missing or invalid.
 
