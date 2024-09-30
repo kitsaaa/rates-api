@@ -21,6 +21,7 @@ https://rates-api.vercel.app/api/rate
 
 ```bash
 GET https://rates-api.vercel.app/api/rate?city=MSK&pair=BTC/USD
+```
 
 ### Example Success Response
 
@@ -32,14 +33,14 @@ GET https://rates-api.vercel.app/api/rate?city=MSK&pair=BTC/USD
   "in": "50000",
   "out": "51000"
 }
-
+```
 ### Example Error Response
 
 ```json
 {
   "error": "Курс не найден."
 }
-
+```
 ## City Codes
 
 Below is a list of city codes that can be used in the `city` parameter.
@@ -72,7 +73,7 @@ Below is a list of supported currency pairs that can be used in the `pair` param
 
 ```bash
 GET https://your-project-name.vercel.app/api/rate?city=MSK&pair=BTC/USD
-
+```
 ### Error handling
 The API returns an error if required parameters are missing or invalid.
 
@@ -81,6 +82,6 @@ The API returns an error if required parameters are missing or invalid.
 {
   "error": "Параметры city и pair обязательны."
 }
-
+```
 
 
