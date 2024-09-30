@@ -6,7 +6,7 @@ This API provides exchange rates for specified currency pairs based on city. It 
 
 ```bash
 https://rates-api.vercel.app/api/rate
-
+```
 
 ## Method: GET
 
