@@ -1,5 +1,5 @@
-import fetch from 'node-fetch'; // Используем import вместо require
-import xml2js from 'xml2js'; // xml2js все еще можно использовать с require или import
+import fetch from 'node-fetch';
+import xml2js from 'xml2js';
 
 export default async function handler(req, res) {
     try {
@@ -14,7 +14,7 @@ export default async function handler(req, res) {
         const url = 'https://keine-exchange.com/request-exportxml.xml';
 
         // Загружаем данные
-        const response = await fetch(url); // Убедитесь, что fetch импортирован как ESM
+        const response = await fetch(url);
         if (!response.ok) {
             console.error('Ошибка при загрузке XML:', response.statusText);
             return res.status(500).json({ error: 'Не удалось загрузить XML.' });
@@ -34,7 +34,7 @@ export default async function handler(req, res) {
             return res.status(404).json({ error: 'Курсы не найдены.' });
         }
 
-        // Находим курс
+        // Находим курс для заданного города и валютной пары
         const rate = items.find(item => 
             item.city && item.city[0].toUpperCase() === city.toUpperCase() &&
             item.from && item.from[0].toUpperCase() === fromCurrency &&
