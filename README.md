@@ -56,17 +56,31 @@ Below is a list of city codes that can be used in the `city` parameter.
 | Nizhny Novgorod    | NNOV  |
 | Novosibirsk        | NSK   |
 | Barnaul            | BRNL  |
-| Murmansk           | MRPL  |
+| Mariupol           | MRPL  |
 
 ## Supported Currencies
 
 Below is a list of supported currency pairs that can be used in the `pair` parameter.
 
-| From Currency | To Currency                |
-|---------------|----------------------------|
-| BTC           | CASHUSD, CASHRUB       |
-| LTC           | CASHUSD, CASHRUB       |
-| ETH           | CASHUSD, CASHRUB       |
+| From Currency   | To Currencies                                                                                                                       |
+|:----------------|:------------------------------------------------------------------------------------------------------------------------------------|
+| BTC             | USDTTRC20, CASHRUB, CASHUSD                                                                                                         |
+| CASHAED         | USDTTRC20                                                                                                                           |
+| CASHEUR         | USDTTRC20, ETH, BTC, USDTERC20, USDTBEP20                                                                                           |
+| CASHRUB         | USDTPOLYGON, USDCERC20, USDTERC20, USDTSOL, DAI, XRP, ETC, TON, CEM, ZEC, BUSD, USDTTRC20, USDCTRC20, BTC, ETH, USDTBEP20, XMR, LTC |
+| CASHTRY         | USDTTRC20                                                                                                                           |
+| CASHUSD         | BTC, USDTTRC20, ETH                                                                                                                 |
+| DAI             | CASHRUB                                                                                                                             |
+| ETC             | CASHRUB                                                                                                                             |
+| ETH             | CASHEUR, CASHRUB, CASHUSD                                                                                                           |
+| LTC             | CASHRUB                                                                                                                             |
+| SBERRUB         | ATMQRTHB                                                                                                                            |
+| USDCERC20       | CASHUSD, CASHRUB                                                                                                                    |
+| USDTBEP20       | CASHAED, CASHTHB, ATMQRTHB, BTC, CASHEUR, CASHUSD, CASHRUB                                                                          |
+| USDTERC20       | CASHTHB, CASHAED, ATMQRTHB, BTC, CASHEUR, CASHUSD, CASHRUB                                                                          |
+| USDTTRC20       | CASHTRY, CASHTHB, CASHAED, CEM, ATMQRTHB, WIRETHB, BTC, CASHUSD, CASHEUR, CASHRUB                                                   |
+| XRP             | CASHRUB                                                                                                                             |
+
 
 ### Example Request for Moscow and BTC/USD
 
